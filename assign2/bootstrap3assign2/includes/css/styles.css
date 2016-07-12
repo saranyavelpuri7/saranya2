@@ -13,9 +13,10 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
-.container{
-   background:url('../images/bg2.jpg'); top:center;
-   background-repeat: no-repeat;
+
+
+.container-fluid{
+  padding:0px;
 }
 #features{
    text-align:center;
@@ -24,11 +25,12 @@ Notes:	 Hand coded for Udemy.com
    margin:0 0 20px;
 }
 #featureHeading h1{
-   font-family: 'Lobster',cursive;
+   font-family: 'Roboto',sans-serif;
+   margin:20px 20px 20px 20px;
 }
 #featureHeading p{
-   font-family: 'Lobster',cursive;
-
+   font-family: 'Roboto',sans-serif;
+margin:20px 20px 20px 20px;
 }
 footer{
    
@@ -43,17 +45,67 @@ padding:20px;
    body{
       -webkit-font-smoothing:antialiased;
       text-rendering: optimizeLegibility;
+
    }
 
 footer ul.unstyle{
 list-style: none;
 padding:none;
 }
-
+.panel{
+   border: solid #eee;
+}
+.panel-heading{
+   background: #eee;
+}
 
 /* --------------------------------------
    Navbar
    -------------------------------------- */
+   @media (max-width: 991px) {
+    .col-sm-4{
+      list-style: none;
+      
+    }
+    .navbar-left{
+      margin-top:15px;
+    }
+   .navbar-header {
+       float: none;
+   }
+   .navbar-toggle {
+       display: block;
+   }
+   .navbar-collapse {
+       border-top: 1px solid transparent;
+       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+   }
+   .navbar-collapse.collapse {
+       display: none!important;
+   }
+   .navbar-nav {
+       float: none!important;
+       margin: 7.5px -15px;
+   }
+   .navbar-nav>li {
+       float: none;
+   }
+   .navbar-nav>li>a {
+       padding-top: 10px;
+       padding-bottom: 10px;
+   }
+   .navbar-text {
+       float: none;
+       margin: 15px 0;
+   }
+   /* since 3.1.0 */
+   .navbar-collapse.collapse.in { 
+       display: block!important;
+   }
+   .collapsing {
+       overflow: hidden!important;
+   }
+}
    #searchInput{
       width:200px;
       height:30px;
@@ -62,7 +114,9 @@ padding:none;
  width:180px;
  height:40px;
   }
-
+.form-control{
+   display:inline;
+}
    
    .navbar{
    
@@ -73,18 +127,18 @@ padding:none;
  padding-top: 60px;
  font size:14px;
    }
-.nav-collapse{
+.navbar-collapse{
    background-color: #d5d5d5;
 }
 #features h3{
-font-family: 'Lobster',cursive;
+font-family: 'Roboto',sans-serif;
 }
 #features p{
-   font-family: 'Lobster',cursive;
+   font-family: 'Roboto',sans-serif;
    font-size:20px;}
 .headings{
  color:white;
-   font-family: 'Lobster',cursive;
+   font-family: 'Roboto',sans-serif;
 }
 
    
@@ -100,10 +154,10 @@ font-family: 'Lobster',cursive;
 }
 .carousel-caption h4{
    font-size: 36px;
-   font-family: 'Lobster',cursive;
+   font-family: 'Roboto',sans-serif;
 }
 .carousel-caption p{
-  font-family: 'Lobster',cursive;
+  font-family: 'Roboto',sans-serif;
 }
 #myCarousel .item{height:400px;}
 
@@ -144,23 +198,19 @@ font-family: 'Lobster',cursive;
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-   .alert{
-     margin: 10px 0;  
-     display:none;  
-   }
-.well{
-   margin: 10px 0;
-}
+  
+
 .tabbable img.thumbnail{
    margin: 0px 10px 0px 0px;
 }
 .page-header{
      padding:0px;
    text-align:center;
+   margin-top:150px;
 }
 .page-header h3{
       font-size:40px;
-      font-family: 'Lobster',cursive;
+      font-family: 'Roboto',sans-serif;
  }
 #myCarousel{
    padding:-0px;
@@ -189,14 +239,14 @@ top:-20px;
    font-size: 12px
 }
 #tab1 h4,p,ul{
-font-family: 'Lobster',cursive;
+font-family: 'Roboto',sans-serif;
 font-size:19px;
 }
 .up h3,h4{
-   font-family: 'Lobster',cursive;
+   font-family: 'Roboto',sans-serif;
 }
 #moreCourses h3{
-   font-family:'Lobster',cursive;
+   font-family:'Roboto',sans-serif;
 }
 footer  h5{
 font size:50px;
@@ -228,6 +278,7 @@ list-style: none;
 
 
 	#myCarousel .item{height: 310px;}
+
 
    #slide1{
    background: url('../../images/sm2.jpg') top center no-repeat;
